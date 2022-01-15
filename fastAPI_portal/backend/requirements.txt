@@ -14,3 +14,7 @@ mysqlclient
 
 #for loading environment variables
 python-dotenv
+
+
+# validating incomming request
+pydantic
