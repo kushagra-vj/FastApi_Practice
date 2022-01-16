@@ -1,15 +1,14 @@
-import imp
-from unicodedata import name
 from fastapi import FastAPI
 from core.config import settings
-from apis.general_pages.route_homepage import general_pages_router
 from fastapi.staticfiles import StaticFiles
 from db.session import engine
 from db.base import Base
+from apis.base import api_router
 
 
 def include_router(app):
-    app.include_router(general_pages_router)
+
+    app.include_router(api_router)
 
 
 def configure_static(app):
