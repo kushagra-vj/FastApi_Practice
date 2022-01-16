@@ -18,3 +18,4 @@ python-dotenv
 
 # validating incomming request
 pydantic
+pydantic[email]
